@@ -20,4 +20,4 @@ O conteúdo da aula 1 está disponível em (https://github.com/YuriMoura33/k8s/t
 Todos os scripts e instruções necessárias estão disponiveis em https://github.com/YuriMoura33/k8s/tree/main/terraform/cria_k8s
 
 # K8S - AULA 2
-O conteúdo da aula 1 está disponível em https://github.com/YuriMoura33/k8s/aula1](https://github.com/YuriMoura33/k8s/tree/main/aula2)
+O conteúdo da aula 2 está disponível em (https://github.com/YuriMoura33/k8s/tree/main/aula2)
