@@ -1,0 +1,54 @@
+# K8S - AULA 2
+__________________________________________________
+O objetivo desta primeira etapa é evoluirmos com os conhecimentos da aula 1. 
+
+O conteúdo da aula 1 está disponível no material PPT aula2.ppt. 
+
+______________________________________________________
+
+Lembrando que quem não criou um ambiente para as aulas deve usar o material em /home/yurimoura/worspaces/k8s/aula1/Requisitos 
+
+
+# K8S - AULA 2 - Minikube
+__________________________________________________
+O Minikube é uma ferramenta que facilita executar o Kubernetes localmente, executando um cluster de Kubernetes com um único nó. É muito bom para testar funcionalidades, aprender a trabalhar com o Kubernetes e principalmente para quem quer passar raiva. Mas considerem uma raiva boa, como porta de aprendizado para conquistas maiores e melhores!!! 
+
+Toda a documentação do Minikube está disponivel em https://kubernetes.io/pt-br/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/ e portanto não estou aqui para ensinar a procurar material e nem ler documentação. Vamos a prática. 
+
+1. Uma vez criado seu ambiente, seja ele WSL ( para os loucos que gostam de Ruindows) ou Linux (Para os outros loucos como eu que gostam de telas pretas, lontras e afins) vamos abaixo. 
+
+-  A instalação para cada tipo de maluco citado acima está disponivel em: https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download 
+
+Uma vez instalado iremos executar nosso minikube com o comando: minikube start.
+
+O resultado deverá ser semelhante ao abaixo. 
+
+![alt text](image.png)
+
+o cluster em si está iniciado. 
+
+para validar o mesmo digite o seguinte comando conforme o exemplo e vc deve ver algo semelhante: 
+
+[yurimoura@USSCENTCOM3 ~]$ kubectl get pods -A
+NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
+kube-system   coredns-7db6d8ff4d-fjjsw           1/1     Running   0             33m
+kube-system   etcd-minikube                      1/1     Running   0             33m
+kube-system   kube-apiserver-minikube            1/1     Running   0             33m
+kube-system   kube-controller-manager-minikube   1/1     Running   0             33m
+kube-system   kube-proxy-9d649                   1/1     Running   0             33m
+kube-system   kube-scheduler-minikube            1/1     Running   0             33m
+kube-system   storage-provisioner                1/1     Running   1 (33m ago)   33m
+[yurimoura@USSCENTCOM3 ~]$ ^C
+[yurimoura@USSCENTCOM3 ~]$ 
+
+
+Com isso temos o minikube rodando e pronto para nossas primeiras aventuras. 
+
+-------------------------------------------------------------------------------------------------
+
+# K8S - AULA 2 - Teoria 
+
+A parte teórica será apresentada com os slides da apresentação que será inserida. 
+
+
+ 
